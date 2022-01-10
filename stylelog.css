@@ -1,0 +1,29 @@
+@font-face{
+    font-family: titillium;
+    src: url("../fonts/titillium.ttf");
+}
+
+body{
+    margin:0;
+
+}
+section{
+    height: 100vh;
+    background-color: rgb(212, 233, 240);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form{
+    width: 500px;
+    height: 400px;
+    background-color: blue;
+    padding: 60px;
+    box-sizing: border-box;
+    border-radius: 20px;
+}
+fieldset{
+    color: white;
+}

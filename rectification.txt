@@ -1,0 +1,11 @@
+on ajoute message au niveau de la base de donnée
+
+
+<div class="hero-image">
+        <div class="hero-text">
+            <h1>PHP PDO </h1>
+            <p>Bootcamp 2021</p>
+            <button class="btn btn-danger btn-lg"><i class="fa fa-youtube"></i> Youtube Channel</button>
+        </div>
+    </div>
+SUITE CODE MME

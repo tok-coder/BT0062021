@@ -1,0 +1,14 @@
+Mansour 
+Ibrahima 
+Tokossel
+Diallo
+Astou
+Bangali
+Cookies definition explication et exemple sur les Cookies difference entre session et cookies
+
+Les cookies sont des fichiers côté client qui contiennent les informations de l'utilisateur
+les cookies sont stockés dans le navigateur de l'utilisateur
+un cookie peut conserver des informations dans le navigateur de l'utilisateur jusqu'à sa suppression
+si vous définissez des variables sur les cookies, vos utilisateurs n'auront pas à se connecter à chaque fois qu'ils entreront dans votre communauté
+les cookies ne peuvent stocker que des chaînes
+enregistrer les cookies pour les références futures
