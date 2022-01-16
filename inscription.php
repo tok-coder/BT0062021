@@ -8,12 +8,12 @@
 	@$valider=$_POST["valider"];
 	$message="";
 	if(isset($valider)){
-		if(empty($nom)) $message="<li>Nom invalide!</li>";
-		if(empty($prenom)) $message.="<li>Prénom invalide!</li>";
-        if(empty($tel)) $message.="<li>telephone invalide!</li>";
-        if(empty($mail)) $message.="<li>mail invalide!</li>";
-		if(empty($pass)) $message.="<li>Mot de passe invalide!</li>";
-		if($pass!=$pass2) $message.="<li>Vous n'avez pas tapé le meme mot de passe!</li>";	
+		if(empty($nom)) $message="Nom invalide!!!";
+		if(empty($prenom)) $message.="Prénom invalide!!!";
+        if(empty($tel)) $message.="telephone invalide!!!";
+        if(empty($mail)) $message.="mail invalide!!!";
+		if(empty($pass)) $message.="Mot de passe invalide!!!";
+		if($pass!=$pass2) $message.="Vous n'avez pas tapé le meme mot de passe!!!";	
 		if(empty($message)){
 			include("connexion.php");
 			$req=$sdb->prepare("select id from utilisateur where email=? limit 1");
@@ -59,10 +59,7 @@
   background-attachment: fixed;
   background-size: cover;
 }
-#message{
 
-background-color: red;
-}
 			</style>			
 		</header>
 		<main>
@@ -71,7 +68,13 @@ background-color: red;
 		<form method="post" action="" enctype="multipart/form-data">
 		
         <h1> Inscription </h1>
-            
+		<?php if(!empty($message)){ ?>
+        <div class="w3-panel w3-pale-red w3-border">
+  <h3>erreur!</h3>
+  <p><?php echo $message ?></p>
+</div>
+<?php header('Refresh:3;url="inscription.php"');?>
+		<?php } ?>
                 <label>Prénom</label><br>
                 <input type="text" name="prenom" id="prenom" value="<?php echo $prenom?>" ><br>
            
@@ -97,9 +100,6 @@ background-color: red;
 			<input type="submit" name="valider" id="valider"value="S'inscrire" />
         
 		</form>
-		<?php if(!empty($message)){ ?>
-		<div id="message"><?php echo $message ?></div>
-		<?php } ?>
 		
 			</main>
 	</body>

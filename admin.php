@@ -21,9 +21,8 @@ include("header1.php");
 </head>
 
 <body class="w3-container">
-<form action="#" method="POST">
 <a href="index.php" id="go"> Go back</a>
-<h2>La liste des étudiants inscrits</h2>
+<h1 style="color:blue;">La liste des étudiants inscrits</h1>
 <div class="w3-responsive">
 <table class="w3-table w3-striped w3-bordered w3-border">
 <thead>
@@ -55,8 +54,10 @@ $query=$sdb->prepare('SELECT * FROM utilisateur');
                                   <td>'.$data['role'].'</td>';
                                         echo '<td>';
                                         echo'<a class="w3-large w3-text-red" href="modifier.php?id='.$data['id'].'"><i class= "fa fa-edit""></i></a>';
-                                        echo ' ';
-                                        echo'<a class="w3-large w3-text-red" href="supprimer.php?id='.$data['id'].'"><i class= "fa fa-trash"></i></a>';
+                                        echo ' ';?>  
+
+                                        <a onclick="return confirm('Voulez-vous vraiment supprimer cet enrégistrement?')" class="w3-large w3-text-red" href="supprimer.php?id=<?=$data['id'];?>"><i class= "fa fa-trash"></i></a>
+                                        <?php
                                         echo ' ';
                                         echo'<a class="w3-large w3-text-blue" href="details.php?id='.$data['id'].'"><i class= "fa fa-eye""></i></a>';
                                         echo '</td>';
@@ -67,6 +68,48 @@ $query=$sdb->prepare('SELECT * FROM utilisateur');
                                 </tbody>
 </table>
   </div><br><br>
+
+  <h1 style="color:blue;">La liste des messages</h1>
+<div class="w3-responsive">
+<table class="w3-table w3-striped w3-bordered w3-border">
+<thead>
+<tr>
+<th>Identification</th>
+  <th>Prenom</th>
+  <th>Nom</th>
+  <th>Email</th>
+  <th>Message</th>
+  <th>Action</th>
+</tr>
+</thead>
+<tbody>
+<?php 
+include ('connexion.php');
+$query=$sdb->prepare('SELECT * FROM message');
+                                $query->execute();
+                                while($data=$query->fetch()){
+                                  echo'<tr>
+                                  <td>'.$data['id'].'</td>
+                                  <td>'.$data['prenom'].'</td>
+                                  <td>'.$data['nom'].'</td>
+                                  <td>'.$data['mail'].'</td>
+                                  <td>'.$data['description'].'</td>';
+                                        echo '<td>';
+                                        echo ' ';?>  
+
+                                        <a onclick="return confirm('Voulez-vous vraiment supprimer cet enrégistrement?')" class="w3-large w3-text-red" href="supprimermess.php?id=<?=$data['id'];?>"><i class= "fa fa-trash"></i></a>
+                                        <?php
+                                        echo ' ';
+                                        echo'<a class="w3-large w3-text-blue" href="detailmess.php?id='.$data['id'].'"><i class= "fa fa-eye""></i></a>';
+                                        echo '</td>';
+                                        echo'</tr>';
+                                        
+                                }                ?>  
+                                
+                                </tbody>
+</table>
+  </div><br><br>
+  
   
   
 

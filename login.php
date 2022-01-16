@@ -11,7 +11,7 @@
 		$res->execute(array($login,$pass));
 		$tab=$res->fetchAll();
 		if(count($tab)==0){
-            $message="<li>Mauvais login ou mot de passe!</li>";
+            $message="Mauvais login ou mot de passe!";
         }
     
 		else{
@@ -57,6 +57,7 @@
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <!--<link rel="stylesheet" href="style.css">-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="w3.css">
 <link rel="stylesheet" href="stylelog.css">
     <title>Authentification</title>
@@ -65,18 +66,22 @@
         a{
             text-decoration: none;
         }
-        #message{
-
-            background-color: red;
-        }
+        
     </style>
 </head>
 
-<body >
+<body class="w3-container">
 <section>
     <form class="w3-container" action="<?php echo $_SERVER['PHP_SELF']; ?>" method="POST">
     <fieldset>
-        <legend><h1 w3-container w3-green> Authentification </h1></legend><br>
+        <legend><h1 w3-container w3-green> Authentification </h1></legend>
+        <?php if(!empty($message)){ ?>
+        <div class="w3-panel w3-pale-red w3-border">
+  <h3>erreur!</h3>
+  <p><?php echo $message ?></p>
+</div>
+<?php header('Refresh:3;url="login.php"');?>
+		<?php } ?>
         <p>
         <i class="fa fa-user w3-xlarge "></i></a>
                 <input type="text" name="log" >
@@ -92,10 +97,6 @@
        
     </fieldset>  
     </form>
-    
-    <?php if(!empty($message)){ ?>
-		<div id="message"><?php echo $message ?></div>
-		<?php } ?>
         </section>
 </body>
 </html>
