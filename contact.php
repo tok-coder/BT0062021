@@ -1,5 +1,5 @@
 <?php
-include("connexion.php");
+include("includes/connexion.php");
 $message="";
 if (isset($_POST['first']) && isset($_POST['last']) && isset($_POST['mail']) && isset($_POST['message'])) {
     $prenom=$_POST["first"];
@@ -34,8 +34,8 @@ header('Refresh:4;url="contact.php"');
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CONTACTS</title>
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    <link rel="stylesheet" href="../style.css">
+    <!--link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"-->
+    <link rel="stylesheet" href="style/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 
@@ -43,7 +43,7 @@ header('Refresh:4;url="contact.php"');
 <body>
     
         <?php
-        include("header.php")
+        include("includes/headerindex.php")
         ?>
         
 
@@ -65,7 +65,7 @@ header('Refresh:4;url="contact.php"');
             <p><label class="w3-text-blue"><b></b></label>
             <input class="w3-input w3-border w3-round-large" name="mail" type="email" placeholder="Email" require></p>
             <p><label class="w3-text-blue"><b></b></label>
-            <textarea class="w3-input w3-border w3-round-large" name="message" type="text" placeholder="Message" id="" cols="5" rows="5"  require>
+            <textarea class="w3-input w3-border w3-round-large" name="message" type="text"  id="" cols="5" rows="5"  placeholder="Message" require>
             </textarea>
             <p><input type="submit" name="envoi" class="w3-btn w3-blue" value="Envoyer"></p>
             </form>
@@ -80,7 +80,7 @@ header('Refresh:4;url="contact.php"');
 
     <footer>
     <?php
-    include("footer.php")
+    include("includes/footer.php")
     ?>
     </footer>
     

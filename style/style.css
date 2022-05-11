@@ -1,0 +1,279 @@
+em{
+    font-family: Monotype Corsiva;  
+    font-size: 25px;
+}
+/*--------------ACCUEIL-----------------*/
+.diaporama {display:none;}
+        
+header {
+    /*background-image: url(img/image15.png);*/
+    display:block;
+}
+.imageheader {
+    height: 100px;
+    color: white;
+}
+
+.diaporama {
+    height: 350px;
+}
+footer a{
+    color: blue;
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+    background-color: lightblue;
+    
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: black;
+}
+
+.bas {
+    flex: 1;
+    text-align: center;
+
+    margin: 5px;
+    padding: 5px;
+}
+
+/*----------APROPOS---------------------*/
+.apropos {
+    display: flex;
+    flex-direction:row;
+    height: 500px;
+
+}
+.apropos1 {
+    flex: 1;
+    /*border: 1px solid black;*/
+    text-align: center;
+}
+.apropos2 {
+    flex: 2;
+    /*border: 1px solid black;*/
+    text-align: center;
+    color: white;
+    background-image: url(img/image6.jpg);
+}
+/*---------------CONTACTS--------------*/
+.contacts {
+    display: flex;
+    flex-direction:row;
+    height: 500px;
+
+}
+.contacts1 {
+    flex: 1;
+    /*border: 1px solid black;*/
+    text-align: center;
+}
+.contacts2 {
+    flex: 2;
+    /*border: 1px solid black;*/
+    text-align: center;
+    color: white;
+    background-image: url(./img/image9.jpg);
+}
+/*----------WORDEXCEL----------------*/
+.wordexcel {
+    display: flex;
+    flex-direction:row;
+    height: 500px;
+    color: orange;
+
+}
+.wordexcel1 {
+    flex: 1;
+    border: 1px solid black;
+    text-align: center;
+}
+.wordexcel2 {
+    flex: 2;
+    /*border: 1px solid black;*/
+    text-align: center;
+    color: white;
+    background-image: url(img/image25.png);
+    /*background-repeat: no-repeat;*/
+}
+/*----------POWER P ACCESS----------------*/
+.ppaccess {
+    display: flex;
+    flex-direction:row;
+    height: 500px;
+    color: orange;
+
+}
+.ppaccess1 {
+    flex: 1;
+    border: 1px solid black;
+    text-align: center;
+}
+.ppaccess2 {
+    flex: 2;
+    /*border: 1px solid black;*/
+    text-align: center;
+    color: white;
+    background-image: url(img/image26.png);
+    /*background-repeat: no-repeat;*/
+}
+/*----------MAINTENANCE----------------*/
+.maintenance {
+    display: flex;
+    flex-direction:row;
+    height: 500px;
+    color: orange;
+
+}
+.maintenance1 {
+    flex: 1;
+    border: 1px solid black;
+    text-align: center;
+}
+.maintenance2 {
+    flex: 2;
+    /*border: 1px solid black;*/
+    text-align: center;
+    color: white;
+    background-image: url(img/image19.jpg);
+    /*background-repeat: no-repeat;*/
+}
+/*----------HTML CSS----------------*/
+.htmlcss {
+    display: flex;
+    flex-direction:row;
+    height: 500px;
+    color: orange;
+
+}
+.htmlcss1 {
+    flex: 1;
+    border: 1px solid black;
+    text-align: center;
+}
+.htmlcss2 {
+    flex: 2;
+    /*border: 1px solid black;*/
+    text-align: center;
+    color: white;
+    background-image: url(img/image13.jpg);
+    /*background-repeat: no-repeat;*/
+}
+/*----------JAVASCRIPT----------------*/
+.javascript {
+    display: flex;
+    flex-direction:row;
+    height: 500px;
+    color: orange;
+
+}
+.javascript1 {
+    flex: 1;
+    border: 1px solid black;
+    text-align: center;
+}
+.javascript2 {
+    flex: 2;
+    /*border: 1px solid black;*/
+    text-align: center;
+    color: white;
+    background-image: url(img/image11.png);
+    /*background-repeat: no-repeat;*/
+}
+/*----------PHP MYSQL----------------*/
+.phpmysql {
+    display: flex;
+    flex-direction:row;
+    height: 500px;
+    color: orange;
+
+
+}
+.phpmysql1 {
+    flex: 1;
+    border: 1px solid black;
+    text-align: center;
+}
+.phpmysql2 {
+    flex: 2;
+    /*border: 1px solid black;*/
+    text-align: center;
+    color: white;
+    background-image: url(img/image15.png);
+    /*background-repeat: no-repeat;*/
+}
+/*----------BUREAUTIQUE----------------*/
+.bureautique {
+    display: flex;
+    flex-direction:row;
+    height: 500px;
+
+}
+.bureautique1 {
+    flex: 1;
+    /*border: 1px solid black;*/
+    text-align: left;
+    padding: 10px;
+}
+.bureautique2 {
+    flex: 1;
+    /*border: 1px solid black;*/
+    text-align: left;
+    color: white;
+    padding: 10px;
+    
+}
+.diapobureautique {
+    height: 450px;
+}
+/*----------DEPMAINTENANCE----------------*/
+.depmaintenance {
+    display: flex;
+    flex-direction:row;
+    height: 500px;
+
+}
+.depmaintenance1 {
+    flex: 1;
+    /*border: 1px solid black;*/
+    text-align: left;
+    padding: 10px;
+}
+.depmaintenance2 {
+    flex: 1;
+    /*border: 1px solid black;*/
+    text-align: left;
+    color: white;
+    padding: 10px;
+    
+}
+.diapodepmaintenance {
+    height: 450px;
+}
+/*----------DEV WEB----------------*/
+.devweb {
+    display: flex;
+    flex-direction:row;
+    height: 500px;
+
+}
+.devweb1 {
+    flex: 1;
+    /*border: 1px solid black;*/
+    text-align: left;
+    padding: 10px;
+}
+.devweb2 {
+    flex: 1;
+    /*border: 1px solid black;*/
+    text-align: left;
+    color: white;
+    padding: 10px;
+    
+}
+.diapodevweb {
+    height: 450px;
+}

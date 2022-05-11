@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>A PROPOS</title>
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="style/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 
@@ -14,7 +14,7 @@
 <body>
 
         <?php
-        include("header.php")
+        include("includes/headerindex.php");
         ?>
 
 
@@ -31,13 +31,10 @@
     <div>
                 <h1 class="w3-center w3-text-blue">POUR PLUS D'INFORMATION, VEUILLEZ VISITER TOUTES NOS PAGES</h1>
             </div>
-
-
-    <footer>
-    <?php
-    include("footer.php")
-    ?>
-    </footer>
+    
     
 </body>
 </html>
+<?php
+    include("includes/footer.php")
+    ?>

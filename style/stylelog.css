@@ -1,0 +1,29 @@
+@font-face{
+    font-family: titillium;
+    src: url("../fonts/titillium.ttf");
+}
+
+body{
+    margin:0;
+
+}
+section{
+    height: 100vh;
+    background-image:url(../img/management.jpeg);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form{
+    width: 500px;
+    height: 400px;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 60px;
+    box-sizing: border-box;
+    border-radius: 20px;
+}
+fieldset{
+    color: white;
+}

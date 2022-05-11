@@ -1,0 +1,12 @@
+au niveau de la partie de l'inscription on doit mettre le module que l'ediant a choisi
+Dans la partie administration on doit faire l'ajout de formation 
+et une partie pour l'affichage
+la partie des professeurs on doit utiliser le toggle avec java script pour mettre à coté 
+le profil et le module choisi au milieu
+On doit aussi mettre la pagination 
+faire fonctionner la barre de recherche 
+Au niveau du module choisi on doit faire comme le caroussel
+enseignants vont publier des formations
+l'admin va ajouter des module
+
+ 
